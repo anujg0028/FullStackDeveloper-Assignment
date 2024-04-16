@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: lightblue;
+}
+
+.editable {
+    background-color: #fff;
+}
+
+.first-column {
+    background-color: lightblue;
+}
