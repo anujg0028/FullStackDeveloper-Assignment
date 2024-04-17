@@ -1,0 +1,107 @@
+.addNewModalBackground {
+    backdrop-filter: blur(4px);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; 
+    justify-content: center;
+    align-items: center;
+  
+    .modalContainer {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      border-radius: 12px;
+      width: 400px;
+      min-height: 400px;
+      height: auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-color: white;
+      padding: 20px;
+      background-color: #e9d9cd;
+  
+      .formClass {
+        display: flex;
+        flex-direction: column;
+        min-height: 360px;
+        max-height: 40vh;
+        overflow-y: auto;
+        gap: 10px;
+        flex: 2;
+
+        .heading{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 50px;
+          margin-top: 15px;
+
+        }
+
+        .message {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          min-height: 100px;
+          height: auto;
+
+          .messageTextField {
+            margin: 10px;
+          }
+        }
+      }
+   
+     .removeBtn {
+        margin: 5px;
+        display: flex;
+        align-items: center
+      }
+  
+      .titleCloseBtn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 40px; 
+  
+        button {
+          background-color: transparent;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+          color: rgb(236, 79, 79);
+        }
+      }
+  
+      .majorButton {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+        flex: 0 0 40px; 
+  
+        .applyBtn {
+          margin-left: auto;
+        }
+  
+        .remove {
+          margin-left: 2%;
+          /* Pushes the "Remove All" button to the end */
+        }
+      }
+  
+      .modal-title {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: rgb(90, 78, 78);
+        flex-grow: 1;
+        /* Allow the title to grow and take available space */
+        margin: 0;
+        /* Remove default margin */
+      }
+  
+    }
+  }

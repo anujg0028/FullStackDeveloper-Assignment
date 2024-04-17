@@ -1,0 +1,45 @@
+.outerDivSmall {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 10px;
+    min-width: 220px;
+    max-width: 220px;
+    max-height: 100px;
+    background-color: #e9d9cd;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.outerDivLarge {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 10px;
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 100px;
+    background-color: #e9d9cd;
+    border-radius: 10px;
+    gap: 8px;
+
+}
+
+.timeAndDelete {
+    display: flex;
+    justify-content: space-between;
+
+    #date {
+        font-size: small;
+        color: #817373;
+    }
+
+    .deleteBtn {
+        min-width: 10px;
+    }
+}
+
+.message {
+    width: auto;
+    overflow-x: hidden;
+}
