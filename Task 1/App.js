@@ -41,6 +41,7 @@ function createTableHeader() {
 function createTableBody() {
     const handleAPICall=(rowIndex,colIndex,newValue)=>{
         data[rowIndex][colIndex]=newValue;
+        //API calling will occur using fetch
         console.log('API call with the value: ',newValue);
     };
 
